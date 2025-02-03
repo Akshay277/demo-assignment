@@ -1,0 +1,11 @@
+name: 'Custom REST API'
+type: module
+description: 'custom REST API resource for articles.'
+core_version_requirement: ^9 || ^10
+package: 'Custom'
+dependencies:
+  - drupal:restui
+  - drupal:rest
+  - drupal:serialization
+  - drupal:user
+  - drupal:node
