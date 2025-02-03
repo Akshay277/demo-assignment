@@ -1,0 +1,6 @@
+services:
+  custom_rest_api.article_rest_resource:
+    class: Drupal\custom_rest_api\Plugin\rest\resource\ArticleRestResource
+    arguments: ['@logger.factory', '@current_user', '@entity_type.manager']
+    tags:
+      - { name: 'rest.resource' }
